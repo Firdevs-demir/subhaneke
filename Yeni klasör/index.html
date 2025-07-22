@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sübhaneke Ezberliyorum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="backgroundMusic" src="sounds/fanfare.mp3" loop autoplay></audio>
+  <audio id="clickSound" src="sounds/click.mp3"></audio>
+  <audio id="wrongSound" src="sounds/error.mp3"></audio>
+  <audio id="applauseSound" src="sounds/applause.mp3"></audio>
+
+  <div class="background">
+    <img src="images/cloud.png" class="cloud cloud1" alt="Bulut" />
+    <img src="images/cloud.png" class="cloud cloud2" alt="Bulut" />
+  </div>
+
+  <header>
+    <h1>Sübhaneke Duasını Ezberliyorum</h1>
+    <h2 class="arabic">اللّٰهُ أَكْبَرُ</h2>
+  </header>
+
+  <div class="description">
+    Oyun başlarken <b>سُبْحَانَكَ</b> kelimesi kutu içinde belirecek. Devamında
+    doğru kelimeyi seç!
+  </div>
+
+  <main>
+    <div id="phraseContainer"></div>
+    <div id="wordOptions"></div>
+  </main>
+
+  <div id="resultMessage"></div>
+  <button id="retryBtn" onclick="startGame()">Tekrar Dene</button>
+
+  <div id="celebration">
+    <img src="images/badge.png" alt="Başarı Rozeti" />
+    <p>Maşaallah! Başarıyla Tamamladınız. Tebrikler!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
